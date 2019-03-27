@@ -1,0 +1,6 @@
+The directory '/home/ronaldt41/.cache/pip/http' or its parent directory is not owned by the current user and the cache has been disabled. Please check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+The directory '/home/ronaldt41/.cache/pip' or its parent directory is not owned by the current user and caching wheels has been disabled. check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+launchpadlib 1.10.6 requires testresources, which is not installed.
+pybuilder 0.11.17 has requirement setuptools~=39.0.0, but you'll have setuptools 40.6.3 which is incompatible.
+You are using pip version 10.0.1, however version 19.0.3 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
