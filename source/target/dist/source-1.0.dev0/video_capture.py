@@ -24,20 +24,21 @@ while (cap.isOpened()):
 
     for (i, rect) in enumerate(rects):
         shape = predictor(gray, rect)
-        shape = face_utils.shape_to_np(shape)
-        
-        for (name, (i, j)) in face_utils.FACIAL_LANDMARKS_IDXS.items():
-            if name == "mouth":
-                pts = shape[i:j]
+	    shape = face_utils.shape_to_np(shape)
+     
+	    for (name, (i, j)) in face_utils.FACIAL_LANDMARKS_IDXS.items():
+		    
+		    if name == "mouth":
+			    pts = shape[i:j]
                 break
                 
-        print(pts)
-        hull = cv2.convexHull(pts)
-        print(cv2.contourArea(hull))
-
-        cv2.drawContours(overlay, [hull], -1, (158, 163, 32), -1)
-        cv2.addWeighted(overlay, 0.75, output, 0.25, 0, output)
-        break
+	    print(pts)
+	    hull = cv2.convexHull(pts)
+	    print(cv2.contourArea(hull))
+	    
+	    cv2.drawContours(overlay, [hull], -1, (158, 163, 32), -1)
+	    cv2.addWeighted(overlay, 0.75, output, 0.25, 0, output)
+	    break
     
     cv2.imshow("Third Ear", output)
     if cv2.waitKey(1) == 27:
