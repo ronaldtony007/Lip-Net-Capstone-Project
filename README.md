@@ -1,6 +1,6 @@
 # Lip-Net-Capstone-Project
 
-This project has some prerequesites before running the scripts, i.e., Certain libraries need to be installed:
+This project has some prerequisites before running the scripts, i.e., Certain libraries need to be installed:
 
 1) sudo apt-get install build-essential cmake
 2) sudo apt-get install libgtk-3-dev
@@ -13,3 +13,4 @@ After install all the above,
 change directory to the source folder, where the build.py is placed and execute "sudo pyb install_dependencies" in terminal.
 
 Then run "sudo pyb" to build the project and execute the python scripts placed in the target folder.
+ 
